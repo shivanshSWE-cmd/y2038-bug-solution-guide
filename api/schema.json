@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Y2038SafeEventPayload",
+  "description": "JSON Schema enforcing Y2038-safe 64-bit integer timestamps and ISO-8601 strings.",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Unique identifier for the event."
+    },
+    "timestamp_epoch_sec": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9223372036854775807,
+      "description": "64-bit signed Unix epoch timestamp in seconds."
+    },
+    "timestamp_epoch_ms": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9223372036854775807,
+      "description": "64-bit signed Unix epoch timestamp in milliseconds."
+    },
+    "timestamp_iso8601": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 formatted timestamp string in UTC (YYYY-MM-DDTHH:mm:ssZ)."
+    }
+  },
+  "required": ["event_id", "timestamp_epoch_sec", "timestamp_iso8601"]
+}

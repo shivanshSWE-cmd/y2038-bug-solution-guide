@@ -8,9 +8,12 @@
 
 ---
 
-## 📌 Executive Summary
+## 📌 Executive Summary & Quick Links
 
-Below is the core logic to fix the Y2K38 integer overflow issue. If you want to install this across your entire system via a package manager, or if you want to help test it on different OS architectures, please visit the [Full GitHub Repository](https://github.com/shivanshSWE-cmd/y2038-bug-solution-guide).
+* 🔗 **Public GitHub Gist**: [https://gist.github.com/shivanshSWE-cmd/44f80b8025d4251b8010d704e2eab9ee](https://gist.github.com/shivanshSWE-cmd/44f80b8025d4251b8010d704e2eab9ee)
+* 🚀 **Full GitHub Repository**: [https://github.com/shivanshSWE-cmd/y2038-bug-solution-guide](https://github.com/shivanshSWE-cmd/y2038-bug-solution-guide)
+
+Below is the core logic to fix the Y2K38 integer overflow issue. If you want to install this across your entire system via a package manager, or if you want to help test it on different OS architectures, please visit the [Full GitHub Repository](https://github.com/shivanshSWE-cmd/y2038-bug-solution-guide) or view the quick snippet on the [Public GitHub Gist](https://gist.github.com/shivanshSWE-cmd/44f80b8025d4251b8010d704e2eab9ee).
 
 ---
 
