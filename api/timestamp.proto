@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package y2038.api;
+
+// Y2038-Safe Protocol Buffer Message Definitions
+
+message EventPayload {
+    string event_id = 1;
+
+    // Explicit 64-bit integer timestamp in seconds since Unix epoch (Jan 1 1970 UTC)
+    // Prevents 32-bit truncation over network transport.
+    int64 timestamp_seconds = 2;
+
+    // Optional 64-bit millisecond precision timestamp
+    int64 timestamp_millis = 3;
+
+    // Recommended: Standard ISO-8601 string representation (e.g. "2038-01-19T03:14:08Z")
+    string timestamp_iso = 4;
+}
